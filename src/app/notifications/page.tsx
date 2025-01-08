@@ -29,7 +29,6 @@ const getNotificationIcon = (type: string) => {
 const NotificationPage = () => {
   const [notifications,setNotifications] = useState<Notification[]>([])
   const [isLoading,setIsLoading] = useState(true)
-  console.log(notifications)
   useEffect(() => {
     const fetchNotifications = async() =>{
       try {

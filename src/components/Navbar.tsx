@@ -17,7 +17,7 @@ const Navbar = async () => {
               </Link>
           </div>
             <DesktopNavbar/>
-            <MobileNavbar/>
+            <MobileNavbar username={user?.username ?? user?.emailAddresses[0].emailAddress.split('@')[0]}/>
         </div>
       </div>
     </nav>
